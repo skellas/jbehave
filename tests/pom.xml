@@ -14,7 +14,9 @@
     <artifactId>tests</artifactId>
     <properties>
         <jbehave.version>4.3.3</jbehave.version>
-        <jbehave.site.version>3.1.1</jbehave.site.version>
+        <jbehave.site.version>3.12.0</jbehave.site.version>
+
+        <selenium.version>3.0.1</selenium.version>
     </properties>
 
     <dependencies>
@@ -47,22 +49,18 @@
             <artifactId>jbehave-spring</artifactId>
             <version>${jbehave.version}</version>
         </dependency>
-        <!--
+
         <dependency>
-            <groupId>org.jbehave.site</groupId>
-            <artifactId>jbehave-site-resources</artifactId>
-            <version>${jbehave.site.version}</version>
-            <type>zip</type>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>org.jbehave</groupId>
-            <artifactId>jbehave-core</artifactId>
-            <version>${jbehave.version}</version>
-            <classifier>resources</classifier>
-            <type>zip</type>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>${selenium.version}</version>
         </dependency>
-        -->
     </dependencies>
 
 </project>
