@@ -1,0 +1,65 @@
+<div class="story">
+<h1></h1>
+<div class="path">com/skellas/jbehave/tests/stories/server_creation.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> prove that Servers can be created</div>
+<div class="element asA"><span class="keyword asA">As a</span> tester</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> create multiple servers then call their getters</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Server should return the identifier used in the constructor</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given a server is created with identifier &lt;identifier&gt; and status &lt;status&gt;</div>
+<div class="step">Then the server responds with &lt;knownIdentifier&gt;</div>
+<table>
+<thead>
+<tr>
+<th>identifier</th><th>status</th><th>knownIdentifier</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>AAA</td><td>AVAILABLE</td><td>AAA</td></tr>
+<tr>
+<td>BBB</td><td>DOWN</td><td>BBB</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {identifier=AAA, status=AVAILABLE, knownIdentifier=AAA}</h3>
+<div class="step successful">Given a server is created with identifier <span class="step parameter">AAA</span> and status <span class="step parameter">AVAILABLE</span></div>
+<div class="step successful">Then the server responds with <span class="step parameter">AAA</span></div>
+
+<h3 class="example">Example: {identifier=BBB, status=DOWN, knownIdentifier=BBB}</h3>
+<div class="step successful">Given a server is created with identifier <span class="step parameter">BBB</span> and status <span class="step parameter">DOWN</span></div>
+<div class="step successful">Then the server responds with <span class="step parameter">BBB</span></div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Server should return the status used in the constructor</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given a server is created with identifier &lt;identifier&gt; and status &lt;status&gt;</div>
+<div class="step">Then the server responds with &lt;knownStatus&gt;</div>
+<table>
+<thead>
+<tr>
+<th>identifier</th><th>status</th><th>knownStatus</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>AAA</td><td>AVAILABLE</td><td>AVAILABLE</td></tr>
+<tr>
+<td>BBB</td><td>DOWN</td><td>DOWN</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {identifier=AAA, status=AVAILABLE, knownStatus=AVAILABLE}</h3>
+<div class="step successful">Given a server is created with identifier <span class="step parameter">AAA</span> and status <span class="step parameter">AVAILABLE</span></div>
+<div class="step successful">Then the server responds with <span class="step parameter">AVAILABLE</span></div>
+
+<h3 class="example">Example: {identifier=BBB, status=DOWN, knownStatus=DOWN}</h3>
+<div class="step successful">Given a server is created with identifier <span class="step parameter">BBB</span> and status <span class="step parameter">DOWN</span></div>
+<div class="step successful">Then the server responds with <span class="step parameter">DOWN</span></div>
+</div>
+</div>
+</div>

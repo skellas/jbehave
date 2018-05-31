@@ -1,0 +1,7 @@
+com\skellas\jbehave\AcceptanceTestsConfiguration.class
+com\skellas\jbehave\tests\configurations\ServerCreationStories.class
+com\skellas\jbehave\tests\domain\AcceptanceTest.class
+com\skellas\jbehave\tests\steps\ServerCreationSteps.class
+com\skellas\jbehave\tests\domain\AbstractSpringJBehaveStory.class
+com\skellas\jbehave\tests\domain\Steps.class
+com\skellas\jbehave\tests\stories\ServerCreation.class
